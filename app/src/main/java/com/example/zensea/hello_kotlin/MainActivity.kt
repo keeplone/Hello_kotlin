@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btn1.setText("Hello Kotlin")
-        btn2.setText("Android")
+        btn2.text = "Android"
 
         btn1.setOnClickListener { Toast.makeText(this, "สวัสดี kotlin", Toast.LENGTH_SHORT).show() }
         btn2.setOnClickListener { Toast.makeText(this, "Android Develop", Toast.LENGTH_SHORT).show() }
