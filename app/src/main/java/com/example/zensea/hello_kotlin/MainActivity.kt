@@ -1,5 +1,6 @@
 package com.example.zensea.hello_kotlin
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -13,7 +14,11 @@ class MainActivity : AppCompatActivity() {
         btn1.setText("Hello Kotlin")
         btn2.text = "Android"
 
-        btn1.setOnClickListener { Toast.makeText(this, "สวัสดี kotlin", Toast.LENGTH_SHORT).show() }
+        btn1.setOnClickListener {
+            val intent = Intent(this, Testintent::class.java)
+            startActivity(intent)
+        }
         btn2.setOnClickListener { Toast.makeText(this, "Android Develop", Toast.LENGTH_SHORT).show() }
     }
+
 }
